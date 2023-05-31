@@ -1,8 +1,8 @@
 CC = c++
-CFLAGS = #-Wall -Werror -Wextra
+CFLAGS = -Wall -Werror -Wextra
 NAME = account
 SRCS = $(wildcard *.cpp)
-OBJS = $(SRCS:.c=.o)
+OBJS = $(SRCS:.cpp=.o)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $^

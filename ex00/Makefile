@@ -2,7 +2,7 @@ CC = c++
 CFLAGS = -Wall -Werror -Wextra
 NAME = megaphone
 SRCS = $(wildcard *.cpp)
-OBJS = $(SRCS:.c=.o)
+OBJS = $(SRCS:.cpp=.o)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $^
